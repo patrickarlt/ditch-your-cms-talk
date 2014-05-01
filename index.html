@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ditch Your CMS</title>
+
+		<meta name="description" content="Stop using a CMS to manage your documentation and switch to Markdown, Git and static site generators.">
+		<meta name="author" content="Patrick Arlt">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/patrickarlt.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="//use.typekit.net/poj7lkw.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-state="title">
+					<h1>Ditch Your CMS</h1>
+					<h3>Git + Markdown + Static Sites Generators</h3>
+					<p>
+						<small>Twitter : <a href="http://twitter.com/patrickarlt">@patrickarlt</a> / Slides : <a href="http://twitter.com/hakimel">http://bit.ly/1234</a></small>
+					</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			Reveal.initialize({
+		    margin: 0.1,
+		    minScale: 0.5,
+		    maxScale: 1.5,
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				theme: 'patrickarlt', // available themes are in /css/theme
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+	        // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

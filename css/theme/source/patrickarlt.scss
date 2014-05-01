@@ -1,0 +1,110 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+$cream: #faf7f2; //faf7f2
+$turquoise: #68bacc;
+$coral: #d47499;
+$gray: #343434;
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: "open-sans", sans-serif;
+$mainColor: inherit;
+$headingFont: "sommet-slab", sans-serif;
+$headingColor: inherit;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: $cream;
+$linkColor: $turquoise;
+$linkColorHover: $coral;
+$selectionBackgroundColor: $coral;
+$mainFontSize: 36px;
+$heading1TextShadow: none;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+html body {
+  color: $gray;
+  -webkit-transition: all 0.8s ease !important;
+     -moz-transition: all 0.8s ease !important;
+      -ms-transition: all 0.8s ease !important;
+       -o-transition: all 0.8s ease !important;
+          transition: all 0.8s ease !important;
+  .reveal {
+    color: inherit;
+  }
+}
+
+[data-state='title'],[data-state='title-alt'] {
+  color: $cream;
+}
+
+html.title body {
+  background: $turquoise;
+  .reveal {
+    a {
+      color: $coral;
+      &:hover {
+        color: $cream;
+      }
+    }
+  }
+}
+
+html.title-alt body {
+  background: $coral;
+  .reveal {
+    a {
+      color: $turquoise;
+      &:hover {
+        color: $cream;
+      }
+    }
+    .progress {
+      span {
+        -webkit-transition: background-color 0.8s ease !important;
+           -moz-transition: background-color 0.8s ease !important;
+            -ms-transition: background-color 0.8s ease !important;
+             -o-transition: background-color 0.8s ease !important;
+                transition: background-color 0.8s ease !important;
+        background-color: $turquoise;
+      }
+    }
+  }
+}
+
+.reveal .progress {
+  height: 10px;
+  background: none;
+  span {
+    background-color: $coral;
+  }
+}
+
+.reveal pre {
+  font-size: .5em;
+  line-height: 1.25em;
+  margin: 0 auto;
+  box-shadow: none;
+  width: 100%;
+}
+
+.reveal pre code {
+  padding: 0 1em;
+}
