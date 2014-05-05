@@ -165,11 +165,11 @@ html.title-alt body {
     html.title-alt body .reveal a:hover {
       color: #faf7f2; }
   html.title-alt body .reveal .progress span {
-    -webkit-transition: background-color 0.8s ease !important;
-    -moz-transition: background-color 0.8s ease !important;
-    -ms-transition: background-color 0.8s ease !important;
-    -o-transition: background-color 0.8s ease !important;
-    transition: background-color 0.8s ease !important;
+    -webkit-transition: all 0.8s ease !important;
+    -moz-transition: all 0.8s ease !important;
+    -ms-transition: all 0.8s ease !important;
+    -o-transition: all 0.8s ease !important;
+    transition: all 0.8s ease !important;
     background-color: #68bacc; }
 
 .reveal .progress {
@@ -179,11 +179,17 @@ html.title-alt body {
     background-color: #d47499; }
 
 .reveal pre {
-  font-size: .5em;
+  font-size: .75em;
   line-height: 1.25em;
   margin: 0 auto;
   box-shadow: none;
   width: 100%; }
 
 .reveal pre code {
-  padding: 0 1em; }
+  padding: 1em; }
+
+.reveal li, .reveal p {
+  line-height: 1.5em; }
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  line-height: 1.25em; }

@@ -47,7 +47,197 @@
 					<h1>Ditch Your CMS</h1>
 					<h3>Git + Markdown + Static Sites Generators</h3>
 					<p>
-						<small>Twitter : <a href="http://twitter.com/patrickarlt">@patrickarlt</a> / Slides : <a href="http://twitter.com/hakimel">http://bit.ly/1234</a></small>
+						<small>Twitter : <a href="http://twitter.com/patrickarlt">@patrickarlt</a> / Slides : <a href="http://patrickarlt.github.io/ditch-your-cms-talk/">http://bit.ly/1fW17GQ</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Who Am I?</h2>
+					<ul>
+						<li>Designer/Developer</li>
+						<li>Esri PDX R&D Center, previously Geoloqi</li>
+						<li>I love bulding products for developers</li>
+						<li>Started working on <a href="http://developers.arcgis.com">ArcGIS for Developers</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>ArcGIS for Developers</h2>
+					<p>Do something great for our developer community, reach new markets, and promote our devloper tools.</p>
+				</section>
+
+				<section data-state="title-alt">
+					<h2>Lets Make A Website</h2>
+				</section>
+
+				<section>
+					<h2>Static site / Flat file CMS</h2>
+					<ul>
+						<li>Fit well with the architechure of ArcGIS Online</li>
+						<li>Extremly fast development cycle</li>
+						<li>Simple development and deployment</li>
+						<li>Easy collaboration, everything lives on GitHub</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>We started small, just a few pages about the different features developers could use, then some tools, and finally&hellip;</p>
+				</section>
+
+				<section data-state="title-alt">
+					<h1>Documentation</h1>
+				</section>
+
+				<section>
+					<h2>What we had&hellip;</h2>
+					<ul>
+						<li>Lots of documentation, 20k+ pages</li>
+						<li>All stored in an old CMS</li>
+						<li>No one liked using the CMS</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What we wanted&hellip;</h2>
+					<ul>
+						<li>Markdown as a document format</li>
+						<li>GitHub for collaboration</li>
+						<li>Custom built tools to solve our problems</li>
+					</ul>
+				</section>
+
+				<section data-state="title-alt">
+					<p>How could we leverage our existing static site tooling and apply it to genrating documentation at scale?</p>
+				</section>
+
+				<section>
+					<h2>Turns Out This Is Nothing New</h2>
+					<p>Startups and open source projects have been using static sites for documentation for awhile.</p>
+				</section>
+
+				<section>
+					<h2>Tools of Choice</h2>
+					<ul>
+						<li>Git/GitHub</li>
+						<li>Markdown</li>
+						<li>Static Site Generator</li>
+					</ul>
+				</section>
+
+				<section data-state="title">
+					<h1>Markdown</h1>
+				</section>
+
+				<section>
+					<h2>What Is Markdown?</h2>
+					<p>Markdown is a formatting language that outputs as HTML.</p>
+					<pre class="markdown"><code># Header
+
+This will be a paragraph with some *italic* and **bold** text, a [link](http://example.com) and an image ![label](http://placekitten.com/200/200).
+
+&gt;h1&lt;HTML is fine too&gt;/h1&lt;</code></pre>
+				</section>
+
+				<section>
+					<h2>Extensibility</h2>
+					<p>Markdown is easy to extend to almost any use case.</p>
+					<ul>
+						<li>Table of contents</li>
+						<li>Turn emails into mailto links</li>
+						<li>Turn @username into Twitter link</li>
+						<li>Documentation helpers</li>
+					</ul>
+				</section>
+
+				<section data-state="title">
+					<h1>Static Site Generators</h1>
+				</section>
+
+				<section>
+					<h2>Static Site Generators</h2>
+					<ul>
+						<li>Treat documents like source code.</li>
+						<li>Tools to build large amounts of pages quickly.</li>
+						<li>Like a CMS where all the files are your computer.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Lots Of Choices</h2>
+					<ul>
+						<li>Ruby (Middleman, Jeykll)</li>
+						<li>JavaScript (Wintersmith, Metelsmith, DocPad)</li>
+						<li>PHP (Droplets, Stacy)</li>
+						<li>Python (Pelican, Hyde)</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>Static sites take care of the hard parts allowing developers to focus on documentation specific problems and writers to focus on content.</p>
+				</section>
+
+				<section data-state="title">
+					<h1>Git / GitHub</h1>
+				</section>
+
+				<section>
+					<h2>What Is Git?</h2>
+					<p>Used by developers to manage source code. Git fills in this missing peices in the system left by the static site generator.</p>
+					<ul>
+						<li>Versioning and rollback</li>
+						<li>Development workflow</li>
+						<li>Release management</li>
+						<li>Collaboration</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What Is GitHub?</h2>
+					<p>Extra collaboration tools on top of Git&hellip;</p>
+					<ul>
+						<li>Issues</li>
+						<li>Wikis</li>
+						<li>Pull Requests</li>
+					</ul>
+				</section>
+
+				<section data-state="title">
+					<h1>Demo Time</h1>
+				</section>
+
+				<section data-state="title-alt">
+					<h1>Drawbacks</h1>
+				</section>
+
+				<section>
+					<h3>Do all my writers/proofreaders have to know Git/Markdown/Ect?</h3>
+					<p class="fragment">Your development team can help you learn these tools. Learning curve isn't much higher then a CMS.</p>
+				</section>
+
+				<section>
+					<h3>What about all the stuff in our CMS?</h3>
+					<p class="fragment">Servers like Nginx and Apache) make it easy to serve static files alongside a CMS.</p>
+				</section>
+
+				<section>
+					<h3>Everyone has to preview the site locally?</h3>
+					<p class="fragment">Automate the build process and automatically build and deploy the site when you push changes to GitHub.</p>
+				</section>
+
+				<section>
+					<h2>In The End</h2>
+					<ul>
+						<li>Bring developers and writer closer togather</li>
+						<li>Writers start thinking like developers</li>
+						<li>Developers start writing documentation</li>
+						<li>Encoruages collaboration and communication</li>
+					</ul>
+				</section>
+
+				<section data-state="title">
+					<h1>Thanks!</h1>
+					<p>
+						<small>Twitter : <a href="http://twitter.com/patrickarlt">@patrickarlt</a> / Slides : <a href="http://patrickarlt.github.io/ditch-your-cms-talk/">http://bit.ly/1fW17GQ</a></small>
 					</p>
 				</section>
 
