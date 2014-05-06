@@ -154,14 +154,14 @@ html body {
 html.title body {
   background: #68bacc; }
   html.title body .reveal a {
-    color: #d47499; }
+    color: #2e7787; }
     html.title body .reveal a:hover {
       color: #d47499; }
 
 html.title-alt body {
   background: #d47499; }
   html.title-alt body .reveal a {
-    color: #68bacc; }
+    color: #992f58; }
     html.title-alt body .reveal a:hover {
       color: #68bacc; }
   html.title-alt body .reveal .progress span {

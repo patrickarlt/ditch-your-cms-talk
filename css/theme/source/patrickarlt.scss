@@ -59,7 +59,7 @@ html.title body {
   background: $turquoise;
   .reveal {
     a {
-      color: $coral;
+      color: darken($turquoise, 25);
       &:hover {
         color: $coral;
       }
@@ -71,7 +71,7 @@ html.title-alt body {
   background: $coral;
   .reveal {
     a {
-      color: $turquoise;
+      color: darken($coral, 25);
       &:hover {
         color: $turquoise;
       }
